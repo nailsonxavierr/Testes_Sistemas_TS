@@ -16,6 +16,8 @@ import static org.junit.Assert.fail;
 
 import org.junit.After;
 
+//importanto os módulos
+
 public class Testes_Selenium {
 
     private WebDriver driver;
