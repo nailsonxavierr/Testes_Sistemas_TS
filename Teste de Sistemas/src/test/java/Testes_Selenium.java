@@ -20,6 +20,7 @@ public class Testes_Selenium {
 
     private WebDriver driver;
 
+    //pré-configuração realizada antes de qualquer teste
     @Before
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
@@ -35,7 +36,7 @@ public class Testes_Selenium {
     }
 
     @Test
-    public void testVerificarExistenciaElementoLogo() {
+    public void testVerificarLogo() {
         try {
             WebElement logoElement = driver.findElement(By.id("logo"));
             assertNotNull(logoElement);
@@ -45,7 +46,7 @@ public class Testes_Selenium {
     }
 
     @Test
-    public void testandoClasse() {
+    public void testeExisteClasse() {
         try {
             WebElement classElemento = driver.findElement(By.className("column_post"));
             assertNotNull(classElemento);
@@ -54,7 +55,7 @@ public class Testes_Selenium {
         }
     }
         @Test
-        public void testSendKeys()
+        public void testUsandoSendKeys()
         {
             WebElement pesquisa = driver.findElement(By.name("q"));
             pesquisa.sendKeys("pimba");
