@@ -20,7 +20,7 @@ public class Testes_Selenium {
 
     private WebDriver driver;
 
-    //pré-configuração realizada antes de qualquer teste
+    //pré-configuração realizada antes de qualquer teste 
     @Before
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
